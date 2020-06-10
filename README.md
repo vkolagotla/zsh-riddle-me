@@ -8,7 +8,7 @@ Custom ZSH plugin to generate random Riddles.
 2. Add `riddle-me` to .zshrc plugin list, usually at (~/.zshrc)
 
 ```zsh
-plugins=(... archlinux)
+plugins=(... riddle-me)
 ```
 
 ## TODO
