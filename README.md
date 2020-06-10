@@ -22,6 +22,8 @@ Custom ZSH plugin to generate random Riddles.
    riddle-me
    ```
 
+**Sample output**
+
 ![Sample output](static/riddle-me.png)
 
 ## TODO
