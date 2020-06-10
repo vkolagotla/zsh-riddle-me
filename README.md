@@ -5,18 +5,27 @@ Custom ZSH plugin to generate random Riddles.
 ## How to use?
 
 1. Clone the repo into your custom plugins folder, usually at ($HOME/.oh-my-zsh/custom/plugins/)
+
+   ```
+   git clone https://gitlab.com/vkolagotla/riddle-me.git ~/.oh-my-zsh/custom/plugins/riddle-me
+   ```
+
 2. Add `riddle-me` to .zshrc plugin list, usually at (~/.zshrc)
 
-```zsh
-plugins=(... riddle-me)
-```
+   ```zsh
+   plugins=(... riddle-me)
+   ```
+
+3. Type `riddle-me` in your terminal
+
+   ```bash
+   riddle-me
+   ```
 
 ## TODO
 
-```
 - [ ] Use `sed` to filter the riddle text.
 - [ ] Find a way to give hints.
-```
 
 ## Source of riddles
 
