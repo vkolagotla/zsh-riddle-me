@@ -5,12 +5,9 @@ function riddle-me {
     TXT=$(curl -s --connect-timeout 2 "https://goodriddlesnow.com/riddles/random" | iconv -c -f ISO-8859-1 -t UTF-8 | grep "<p><strong>")
 
     TXT_R=${TXT#*'<p><strong>Question: </strong>'}
-    R=${TXT_R%'?</p></div'*}
-    R=${R%'</p></div'*}
-    R=${R%' </p></div'*}
-    R=${R%'.</p></div'*}
+    R=${TXT_R%'><ul class="inline-list print-hide">'*}
     # formatted riddle
-    R=$(echo "$R" | sed -e 's|<br/>||g')
+    R=$(echo "$R" | sed -e 's|<br/>||g' | sed -e 's|.</p></div||g' | sed -e 's| </p></div||g' | sed -e 's|?</p></div||g')
     # formatted answer
     TXT_A=${TXT_R#*'<p><strong>Answer: </strong>'}
     A=${TXT_A%'</p><div '*}
@@ -39,6 +36,9 @@ function riddle-me {
             else
                 print -P "And the answer is: %F{2}${A}%f"
             fi
+        ;;
+        *)
+            print -P "The Answer is: %F{2}${A}%f"
         ;;
     esac
 }
