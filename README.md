@@ -29,7 +29,7 @@ Custom ZSH plugin to generate random Riddles.
 ## TODO
 
 - [ ] Fix random HTML elements occurrence in text.
-- [ ] Use `sed` to filter the riddle text.
+- [ ] Cleaver use of `sed` to filter the riddle text.
 - [ ] Update hints.
 
 ## Source of riddles
