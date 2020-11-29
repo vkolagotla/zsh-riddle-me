@@ -30,7 +30,7 @@ Custom [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)  plugin to generate rando
 
 **Sample output**
 
-![Sample output](/home/jawahar/Documents/git/gitlab/riddle-me/static/riddle-me.png)
+![Sample output](static/riddle-me.png)
 
 ## TODO
 
