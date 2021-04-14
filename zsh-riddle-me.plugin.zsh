@@ -1,4 +1,16 @@
-# custom zsh plugin for random riddles
+#!/bin/zsh
+##################################################################################
+# Shellscript : zsh-riddle-me.plugin.zsh         					     .--.
+# Author      : Venkata Kolagotla <venkata.kolagotla@gmail.com>         |ö_ö |
+# Created     : 10-06-2020                                              |\ü/ |
+# Last Updated: 14-04-2021                                         	   //   \ \
+# Requires    : zsh, oh-my-zsh                                        (|     | )
+# Category    : zsh plugin                                       	 /'\_   _/`\\
+# Version     : v0.1.0                                               \___)=(___//
+##################################################################################
+# Description : shows some random riddles
+# Usage       : copy repo to zsh custom plugins dir
+##################################################################################
 
 function riddle-me {
 
